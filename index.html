@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            border: 10px solid blueviolet;
+            min-height: 100vh;
+            color: blueviolet;
+            display: grid;
+            place-items: center;
+            background-image: url(imagem/fundo-abstrato-com-textura-de-tinta-a-oleo-cinza_53876-129925.jpg);
+        }
+        button{
+            color: blueviolet;
+        }
+        section{
+            background: cadetblue;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        p{
+            font-size: 100px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        img{
+            height: 0.5cm;
+            width: 0.5cm;
+        }
+        .letramenor{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1><i>Contador</i></h1>
+        <p id="resultado">0</p>
+        <button onclick="aumentar()">mais <img src="imagem/14620.png" alt="soma"></button>
+        <button onclick="diminuir()">menos <img src="imagem/43625.png" alt="subtração"></button>
+        <p class="letramenor">escolher um número</p>
+        <input type="number" id="numero2">
+        <button onclick="sub()">substituir</button>
+    </section>
+    <script>
+        const input = document.getElementById("numero2");
+        let numero = 0
+        function aumentar(){
+            numero = numero + 1
+            tela()
+        }
+        function diminuir(){
+            numero = numero - 1
+            tela()
+        }
+        function sub(){
+            numero = input.value
+            numero.innerText
+            
+            tela()
+        }
+        
+        //atulizar 
+        function tela(){
+            const p = document.querySelector("#resultado"); //ou getElementById(-sem #-)
+            p.innerText = numero
+        }
+    </script>
+</body>
+</html>
