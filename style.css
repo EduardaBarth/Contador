@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    border: 10px solid blueviolet;
+    min-height: 100vh;
+    color: blueviolet;
+    display: grid;
+    place-items: center;
+    background-image: url(imagem/fundo-abstrato-com-textura-de-tinta-a-oleo-cinza_53876-129925.jpg);
+}
+button{
+    color: blueviolet;
+}
+section{
+    background: cadetblue;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+p{
+    font-size: 100px;
+    font-family: 'Courier New', Courier, monospace;
+}
+img{
+    height: 0.5cm;
+    width: 0.5cm;
+}
+.letramenor{
+    font-size: 20px;
+}
