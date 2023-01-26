@@ -17,29 +17,6 @@
         <input type="number" id="numero2">
         <button onclick="sub()">substituir</button>
     </section>
-    <script>
-        const input = document.getElementById("numero2");
-        let numero = 0
-        function aumentar(){
-            numero = numero + 1
-            tela()
-        }
-        function diminuir(){
-            numero = numero - 1
-            tela()
-        }
-        function sub(){
-            numero = input.value
-            numero.innerText
-            
-            tela()
-        }
-        
-        //atulizar 
-        function tela(){
-            const p = document.querySelector("#resultado"); //ou getElementById(-sem #-)
-            p.innerText = numero
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
